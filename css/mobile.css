@@ -1,0 +1,155 @@
+header {
+  padding: 2rem 2rem;
+  width: 100%;
+}
+
+.desktop-nav {
+  display: none;
+}
+
+.hamburger {
+  display: block;
+  color: white;
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 0px;
+  height: 0px;
+}
+
+.mobile-nav.opened {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 2rem 4rem;
+  height: 300px;
+}
+
+.section {
+  padding: 4rem 2rem;
+}
+
+#intro-section {
+  width: 100%;
+  position: relative;
+  padding: 15rem 2rem;
+  background: linear-gradient(to right, #10aadb, #5351c7);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#intro-section-content h1 {
+  font-size: 7rem;
+}
+
+#intro-section-content p {
+  font-size: 3rem;
+}
+
+#intro-section-content button {
+  margin: 3rem 0rem;
+}
+
+#intro-section-image {
+  display: none;
+}
+
+/* SKILLS SECTION */
+
+#skills-section {
+  padding: 4rem 2rem;
+}
+
+#skills-cards {
+  margin: 4rem 0rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+  align-items: center;
+}
+
+.skill-card {
+  padding: 10rem 0rem;
+  transform: scale(0.8);
+}
+
+.skill-card:hover {
+  transform: scale(0.9);
+}
+
+.level-bar {
+  position: relative;
+  width: 60%;
+  background-color: #3d3c3c2d;
+  height: 1rem;
+  border-radius: 4rem;
+  margin-top: 2rem;
+}
+
+/* PROJECTS SECTION */
+.carousel-card {
+  width: 75%;
+}
+
+/* CONTACT SECTION */
+
+#form-contacts-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.form {
+  width: 90%;
+}
+
+.form-row {
+  margin-left: 0rem;
+}
+
+#contacts-container {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#contacts-container p {
+  font-size: 1.4rem;
+  color: white !important;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+#footer-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-icon {
+  width: 3rem;
+  margin-left: 1.4rem;
+  margin-top: 2rem;
+}

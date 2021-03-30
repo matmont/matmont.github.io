@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Nunito --- header fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSSs -->
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/desktop.css">
+    <link rel="stylesheet" media="screen and (max-width: 1000px)" href="/css/mobile.css" />
+
+    <!-- Font Awesome, for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Matteo Montalbetti</title>
+</head>
+<body>
+    
+    <header>
+        <h4 href="#"><a href="#" style="color: white">Mont.</a></h4>
+        <nav class="desktop-nav">
+            <a href="#about-section">About me</a>
+            <a href="#skills-section">Skills</a>
+            <a href="#projects-section">Projects</a>
+            <a href="#contact-section">Contact me</a>
+        </nav> 
+        <a href="javascript:void(0);" class="hamburger" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </header>
+    
+    <div class="mobile-nav" id=mobile-nav>
+        <a href="#about-section">About me</a>
+        <a href="#skills-section">Skills</a>
+        <a href="#projects-section">Projects</a>
+        <a href="#contact-section">Contact me</a>
+    </div>
+    
+    <main>
+        <section id="intro-section" class="section">
+            <div id="intro-section-light-effect"></div>
+            <div id="intro-section-content">
+                <h1 id="hello-word">.Hello!</h1>
+                <p>I'm <strong>Matteo Montalbetti</strong></p>
+                <button>Download CV</button>
+            </div>
+            <img id="intro-section-image" src="assets/images/developer.svg" alt="developer">
+        </section>
+        <section id="about-section" class="section">
+            <div id="about-section-content">
+                <h2>.About me</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, magni? Molestiae a voluptate totam sunt, dolore consequatur hic voluptates iste id perspiciatis quas error suscipit, neque eaque, veritatis voluptas nostrum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam corrupti nostrum architecto facere eius, suscipit quam aspernatur voluptatum dignissimos distinctio quae quia! Ducimus esse aliquid eos harum nulla eligendi vero!</p>
+            </div>
+        </section>
+        <section id="skills-section" class="section">
+            <div id="skills-section-content">
+                <h2>.Skills</h2>
+                <div id="skills-cards">
+                    <div class="skill-card">
+                        <h4 class="skill-card-title">Java</h4>
+                        <div class="level-bar skill-card-bar" id="java-level-bar"></div>
+                        <p class="level-number">95%</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4 class="skill-card-title">Python</h4>
+                        <div class="level-bar skill-card-bar" id="python-level-bar"></div>
+                        <p class="level-number">85%</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4 class="skill-card-title">C</h4>
+                        <div class="level-bar skill-card-bar" id="c-level-bar"></div>
+                        <p class="level-number">90%</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4 class="skill-card-title">HTML</h4>
+                        <div class="level-bar skill-card-bar" id="html-level-bar"></div>
+                        <p class="level-number">80%</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4 class="skill-card-title">CSS</h4>
+                        <div class="level-bar skill-card-bar" id="css-level-bar"></div>
+                        <p class="level-number">80%</p>
+                    </div>
+                    <div class="skill-card">
+                        <h4 class="skill-card-title">Javascript</h4>
+                        <div class="level-bar skill-card-bar" id="javascript-level-bar"></div>
+                        <p class="level-number">70%</p>
+                    </div>
+                    <!--
+                    <div data-tilt data-tilt-scale="1.05" data-tilt-glare="true" data-tilt-maxGlare=".2" class="skill-card">
+                        <h4 class="skill-card-title">Javascript</h4>
+                        <div class="level-bar skill-card-bar" id="javascript-level-bar"></div>
+                        <p class="level-number">70%</p>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </section>
+        <section id="projects-section" class="section">
+            <div id="projects-section-light-effect"></div>
+            <div id="projects-section-content">
+                <h2>.Projects</h2>
+                <div class="carousel-container">
+                    <div class="carousel-card">
+                        <img class="carousel-card-icon" src="/assets/icons/medical.svg">
+                        <h4>ANSIA: A Neural System that Infers Affects</h4>
+                        <p>This application provides the visualization and saving of the Shimmer3's sensors data. Also, it implements a real-time stress detector with the use of Reservoir Computing Recurrent Neural Networks, based on the physiological sequences of the Shimmer3 sensors.</p>
+                    </div>
+                    <div class="carousel-card">
+                        <img class="carousel-card-icon" src="/assets/icons/medical.svg">
+                        <h4>Project2</h4>
+                        <p>This application provides the visualization and saving of the Shimmer3's sensors data. Also, it implements a real-time stress detector with the use of Reservoir Computing Recurrent Neural Networks, based on the physiological sequences of the Shimmer3 sensors.</p>
+                    </div>
+                    <div class="carousel-card">
+                        <img class="carousel-card-icon" src="/assets/icons/medical.svg">
+                        <h4>Project3</h4>
+                        <p>This application provides the visualization and saving of the Shimmer3's sensors data. Also, it implements a real-time stress detector with the use of Reservoir Computing Recurrent Neural Networks, based on the physiological sequences of the Shimmer3 sensors.</p>
+                    </div>
+                    <a class="carousel-previous" onclick="addCounter(-1)">&#10094;</a>
+                    <a class="carousel-next" onclick="addCounter(1)">&#10095</a>
+                </div>
+                 
+            </div>
+        </section>
+        <section class="section" id="contact-section">
+            <div id="contact-section-content">
+                <h2>.Contact me</h2>
+                
+                <div id="form-contacts-container">
+                    <form class="form" autocomplete="on">
+                        <div class="form-row">
+                            <label for="user-email">Email</label><input type="text" id="user-email" name="user-email">
+                        </div>
+                        <div class="form-row">
+                            <label for="subject">Subject</label><input type="text" id="subject" name="subject">
+                        </div>
+                        <div class="form-row">
+                            <label for="message">Message</label><textarea id="message" name="subject"></textarea>
+                        </div>
+                        <div class="form-row">
+                            <input type="submit" value="Send Message" disabled>
+                        </div>
+                    </form>
+                    <div id="contacts-container">
+                        <p><strong>Email</strong>: matteo.montalbetti3@gmail.com</p>
+                        <p><strong>Phone</strong>: +39 349-5205885</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div id="footer-content">
+                <p>Designed and developed by <strong>Matteo Montalbetti</strong></p>
+                <div id="social-icons">
+                    <a target="_blank" href="https://www.linkedin.com/in/matteo-montalbetti-1a30bb1b1/"><img class="social-icon" src="assets/icons/linkedin.svg"></a>
+                    <a target="_blank" href="https://www.instagram.com/matteo.montalbetti/"><img class="social-icon" src="assets/icons/instagram.svg"></a>
+                    <a target="_blank" href="https://www.facebook.com/matteo.montalbettii/"><img class="social-icon" src="assets/icons/facebook.svg"></a>
+                    
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- JS Libraries -->
+    <script src="/js/libs/anime.min.js"></script>
+    <script src="js/libs/jquery-3.6.0.min.js"></script>
+    <script src="js/libs/tilt.jquery.js"></script>
+
+    <!-- Mobile Navbar popup -->
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+            var x = document.getElementById("mobile-nav");
+            if (x.className === "mobile-nav") {
+                x.className += " opened";
+            } else {
+                x.className = "mobile-nav";
+            }
+        }
+    </script>
+
+    <!-- Carousel controller -->
+    <script>
+        let cardIndex = 1;
+        showCard(cardIndex);
+        function addCounter(n) {
+            cardIndex += n;
+            showCard(cardIndex);
+        }
+
+        function showCard(index) {
+            let cards = document.getElementsByClassName('carousel-card')
+            for (let i = 0; i < cards.length; i++) {
+                cards[i].style.display = "none";
+            }
+            if (cardIndex > cards.length) {
+                cardIndex = 1;
+            }
+            if (cardIndex < 1) {
+                cardIndex = cards.length;
+            }
+            cards[cardIndex - 1].style.display = "flex";
+        }
+    </script>
+</body>
+</html>
