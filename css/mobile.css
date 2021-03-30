@@ -102,6 +102,14 @@ header {
   width: 75%;
 }
 
+.carousel-card button {
+  width: 100%;
+}
+
+.carousel-card .carousel-card-icon {
+  width: 20% !important;
+}
+
 /* CONTACT SECTION */
 
 #form-contacts-container {
